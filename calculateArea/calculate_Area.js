@@ -1,11 +1,13 @@
-let length;
-let width;
+let Amount;
+let Amount2;
+let Amount3;
 
-function calculate(){
-    length = parseFloat(document.getElementById('length').value);
-    width = parseFloat(document.getElementById('width').value);
+function calculateExp(){
+    Amount = parseFloat(document.getElementById('Amount').value);
+    Amount2 = parseFloat(document.getElementById('Amount2').value);
+    Amount3 = parseFloat(document.getElementById('Amount3').value);
 
-    let area = length * width;
+    let total = Amount + Amount2 + Amount3;
 
-    document.getElementById('result').innerText = `The area of the rectangle is: ${area}`;
+    document.getElementById('result').innerText = `The total amount  is: ${total}`;
 }
